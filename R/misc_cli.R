@@ -142,18 +142,18 @@ smd_progress <- function(i_current,i_total, time_stamp_loop = Sys.time(),par_nod
 #' @keywords internal
 smd_get_console_color <- function(WARNING=FALSE){
 
-  if(!rstudioapi::isAvailable()){
+  #if(!rstudioapi::isAvailable()){
     return('')
-  }
+  #}
 
-  if(WARNING){
-    return('\033[0;31m') #red
-  }
+  #if(WARNING){
+  #  return('\033[0;31m') #red
+  #}
 
-  if(rstudioapi::getThemeInfo()$dark){
-    return('\033[0;37m') # white
-  } else{
-    return('\033[0;30m') # black
-  }
+  #if(rstudioapi::getThemeInfo()$dark){
+  #  return('\033[0;37m') # white
+  #} else{
+  #  return('\033[0;30m') # black
+  #}
 
 }
